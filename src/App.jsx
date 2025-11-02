@@ -1,26 +1,13 @@
-import { FruitItem } from "./components/FruitItem"
+import NavBar from "./components/navbar";
+import { Footer } from "./components/Footer";
 
 function App() {
-  const fruits = [
-    {
-      id: 1,
-      name: "Apple",
-    },
-    {
-      id: 2,
-      name: "Banana",
-    },
-    {
-      id: 3,
-      name: "Cherry",
-    },
-  ]
+ 
   return (
-    <ul>
-      {fruits.map((fruit) => (
-        <FruitItem key={fruit.id} id={fruit.id} name={fruit.name} />
-      ))}
-    </ul>
+    <>
+      <NavBar />
+      <Footer />
+    </>
   )
 }
 
